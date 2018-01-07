@@ -1,0 +1,78 @@
+Xft.dpi: 220
+Xft.antialias: true
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
+
+
+! Colors
+! --------------------------------------------------------------------
+#define red     #c7ae95
+#define green   #95c7ae
+#define yellow  #aec795
+#define blue    #ae95c7
+#define magenta #c795ae
+#define cyan    #95aec7
+#define bg      #1c2023
+#define fg      #c7ccd1
+
+! Rofi Settings
+! --------------------------------------------------------------------
+rofi.color-enabled:   true
+rofi.color-window:    bg, cyan
+rofi.color-normal:    bg, fg, bg, cyan, bg
+rofi.color-active:    bg, fg, bg, cyan, bg
+rofi.color-urgent:    bg, fg, bg, red, bg
+rofi.bw:              2
+rofi.hide-scrollbar:  true
+rofi.separator-style: none
+rofi.lines:           4
+rofi.padding:         30
+rofi.dpi:	      220
+
+! Urxvt settings
+! --------------------------------------------------------------------
+URxvt*scrollBar: false
+URxvt.font:      xft:Droid Sans Mono:size=10
+
+
+! Urxvt colors
+! --------------------------------------------------------------------
+! special
+*.foreground:   fg
+*.background:   bg
+*.cursorColor:  #c7ccd1
+URxvt*internalBorder: 10
+
+! black
+*.color0:       #1c2023
+*.color8:       #747c84
+
+! red
+*.color1:       red
+*.color9:       red
+
+! green
+*.color2:       green
+*.color10:      green
+
+! yellow
+*.color3:       yellow
+*.color11:      yellow
+
+! blue
+*.color4:       blue
+*.color12:      blue
+
+! magenta
+*.color5:       magenta
+*.color13:      magenta
+
+! cyan
+*.color6:       cyan
+*.color14:      cyan
+
+! white
+*.color7:       #c7ccd1
+*.color15:      #f3f4f5
