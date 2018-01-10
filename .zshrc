@@ -11,6 +11,9 @@ zstyle :compinstall filename ~/.zshrc
 zstyle ':completion:*' matcher-list 'm:{A-ZÄÖÜÉÈËa-zäöüéèë}={a-zäöüéèëA-ZÄÖÜÉÈË}' '+l:|=*'
 zstyle ':completion::complete:*' use-cache 1
 
+# Add completions
+fpath=(~/.zsh/completion $fpath)
+
 autoload -Uz compinit promptinit colors
 compinit
 promptinit
@@ -144,5 +147,9 @@ function preexec() {
     set_window_title "${USER}@$(hostname): ${PWD} $ $cmd"
 }
 
-
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+eval $(thefuck --alias)
+
+if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
+
