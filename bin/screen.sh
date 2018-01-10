@@ -30,11 +30,11 @@ if [ -z "$choice" ]; then
 fi
 
 if [ $choice == "toot" ]; then
-	comment=$(zenity --title Toot --text="Enter a toot." --entry --entry-text=Enter your toot here...)
+	comment=$(zenity --title Toot --text="Enter a toot." --entry --entry-text="Enter your toot here...")
 	if [ -z "$comment" ]; then
 		exit 1
 	fi
-	image_upload_response=$(curl -F 'file=@'$path'' --header "Authorization: Bearer $mastodon_token" $mastodon_api_url/v1/media)
+	image_upload_response=$(curl -F 'file=@'$path'' --header "Authorization: Bearer $mastodon_token" $mastodon_api_url/media)
 	media_url=$(echo $image_upload_response | jq -r '.url')
 	media_id=$(echo $image_upload_response | jq -r '.id')
 	
