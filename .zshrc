@@ -19,6 +19,9 @@ compinit
 promptinit
 colors
 
+# Aliases
+alias vim=nvim
+
 # key settings
 bindkey -e
 stty stop '' -ixon -ixoff # disable ^S and ^Q
@@ -153,3 +156,4 @@ eval $(thefuck --alias)
 
 if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
 
+export GPG_TTY=$(tty)
