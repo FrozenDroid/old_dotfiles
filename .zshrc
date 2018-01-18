@@ -21,6 +21,8 @@ colors
 
 # Aliases
 alias vim=nvim
+# Fix for aliases with sudo
+alias sudo='sudo '
 
 # key settings
 bindkey -e
