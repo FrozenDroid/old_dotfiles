@@ -1,0 +1,5 @@
+{
+	"rustc_binary_path": "/usr/bin/rustc",
+	"racer_binary_path": "/home/vincent/.cargo/bin/racer",
+	"rustfmt_binary_path": "/home/vincent/.cargo/bin/rustfmt"
+}

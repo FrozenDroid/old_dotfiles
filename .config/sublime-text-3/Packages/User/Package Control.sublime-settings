@@ -1,0 +1,18 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"anaconda_rust",
+		"DA UI",
+		"Dockerfile Syntax Highlighting",
+		"Hide Menu",
+		"INI",
+		"Package Control",
+		"ProjectManager",
+		"Rust Enhanced"
+	]
+}
